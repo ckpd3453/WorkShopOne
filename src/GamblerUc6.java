@@ -56,12 +56,18 @@ public class GamblerUc6
 							{
 								int AmountWonPerDay = InitialStake - StartingStake;
 								System.out.println("Player Won Day " +Day +" Rs. "+AmountWonPerDay);
-								System.out.println("Luckiest Day");
 							}
 							else if(InitialStake < 100)
 							{
 								int AmountLostPerDay = StartingStake - InitialStake;
 								System.out.println("Player Lost Day " +Day +" Rs."+AmountLostPerDay);
+							}
+							if(InitialStake == maxStake)
+							{
+								System.out.println("Luckiest Day");
+							}
+							else if(InitialStake == minStake)
+							{
 								System.out.println("Unluckiest Day");
 							}
 						
